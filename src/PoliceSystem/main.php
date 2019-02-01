@@ -29,7 +29,7 @@ class main extends PluginBase implements Listener{
 		switch($command->getName()){
 		    case "patrol":
 		    if($sender instanceof Player){
-		        if(!$this->police->exists($sender->getName()){
+		        if(!$this->police->exists($sender->getName())){
 		            $this->police->set($sender->getName(),count($this->police->getAll())+1);
 		            $this->police->save();
 		            $this->police->reload();

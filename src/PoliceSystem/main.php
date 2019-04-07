@@ -67,7 +67,7 @@ class main extends PluginBase implements Listener{
 					$abc = $entity->getName();
 					$def = $damager->getName();
 					$entity->teleport($pos);
-					$damager->sendMessage("§a【運営】>>>§a{$entity}を牢屋にテレポートしました");
+					$damager->sendMessage("§a【運営】>>>§e{$entity}§fを牢屋にテレポートしました");
 					return true;
 				}
 			}

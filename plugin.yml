@@ -10,7 +10,7 @@ author: narapon
 load: POSTWORLD
 commands:
   patrol:
-    description: パトロールモード
+    description: Police
     usage: /patrol
     aliases:
     - ptl

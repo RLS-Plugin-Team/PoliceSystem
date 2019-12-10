@@ -24,13 +24,13 @@ class main extends PluginBase implements Listener{
 		    if($sender instanceof Player){
 		        if(!$sender->hasEffect(14)){
 		            $sender->addEffect(new EffectInstance(Effect::getEffect(14), 36000, 1, false));
-		            $sender->sendMessage("パトロールモードに設定しました");
+		            $sender->sendMessage("[Police] §eパトロールモードに設定しました");
 		        }else{
 		            $sender->removeEffect(14);
-		            $sender->sendMessage("パトロールモードを解除しました");
+		            $sender->sendMessage("[Police] §eパトロールモードを解除しました");
 		        }
 		    }else{
-		        $sender->sendMessage("ゲーム内で実行してください");
+		        $sender->sendMessage("[Police] §cゲーム内で実行してください");
 		    }
 		    return true;
 		}
